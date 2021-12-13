@@ -1,0 +1,14 @@
+# MacOS #
+Icon?
+*.DS_Store
+.tmp.drivedownload/*
+.tmp.driveupload/*
+*.out
+
+# Windows #
+Thumbs.db
+*.exe
+
+# VS Code #
+.vscode
+*.dSYM
