@@ -1,7 +1,7 @@
 # Quizlet-Grav-Bot
 A Gravity bot for Macs.
 <br/>
-###Usage:
+##Usage:
 **1.** Open the home page of a Quizlet set in Chrome
 
 **2.** Next to "Terms in this set", select "Original"
