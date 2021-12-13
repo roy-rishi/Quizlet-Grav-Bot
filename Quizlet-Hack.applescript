@@ -1,11 +1,10 @@
 tell application "Google Chrome"
 	activate
 	
-	set quizID to display dialog "ID of the Quizlet set:" default answer "123456789" with title "Save Terms and Defs | Gravity Defier" buttons {"Abort", "Continue"} default button 2 cancel button 1
+	set quizID to display dialog "ID of the Quizlet set:" default answer "123456789" with title "Save Terms and Defs | Gravity Bot" buttons {"Abort", "Continue"} default button 2 cancel button 1
 	set quizID to text returned of quizID
 	
-	set numTerms to display dialog "Select \"Original\" in the dropdown to the right of \"Terms in this set\". 
-Number of terms in the Quizlet set:" default answer "99" with title "Save Terms and Defs | Gravity Defier" buttons {"Abort", "Continue"} default button 2 cancel button 1
+	set numTerms to display dialog "Number of terms in the Quizlet set:" default answer "99" with title "Save Terms and Defs | Gravity Bot" buttons {"Abort", "Continue"} default button 2 cancel button 1
 	set numTerms to text returned of numTerms
 	
 	set termsList to {}
@@ -24,7 +23,7 @@ Number of terms in the Quizlet set:" default answer "99" with title "Save Terms 
 	
 	tell front window to make new tab at after (get active tab) with properties {URL:"https://quizlet.com/" & quizID & "/gravity"}
 	
-	display dialog "Click \"Get Started\" to continue to the settings page. Once there, select \"Hard\" as the difficulty level. Look at the options in the dropdown and chose the option that represents the definition. (If it doesn't work try the other option" with title "Instructions for Settings Pane | Gravity Defier"
+	display dialog "Click \"Get Started\" to continue to the settings page. Once there, select \"Hard\" as the difficulty level. Look at the options in the dropdown and chose the option that represents the definition. (If it doesn't work try the other option" with title "Instructions for Settings Pane | Gravity Bot"
 	
 	--delay 10
 	
