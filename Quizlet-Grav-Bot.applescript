@@ -23,7 +23,7 @@ tell application "Google Chrome"
 	
 	tell front window to make new tab at after (get active tab) with properties {URL:"https://quizlet.com/" & quizID & "/gravity"}
 	
-	display dialog "Click \"Get Started\" to continue to the settings page. Once there, select \"Hard\" as the difficulty level. Look at the options in the dropdown and chose the option that represents the definition. (If it doesn't work try the other option" with title "Instructions for Settings Pane | Gravity Bot"
+	display dialog "Click \"Get Started\" to continue to the settings page. Once there, select \"Hard\" as the difficulty level. Look at the options in the dropdown and chose the option that represents the definition. (If you encounter any issues, try the other option" with title "Instructions for Settings Pane | Gravity Bot"
 	
 	--delay 10
 	
